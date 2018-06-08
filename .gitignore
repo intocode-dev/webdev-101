@@ -69,3 +69,5 @@ typings/
 # MacOS
 .DS_Store
 
+.cache
+dist/

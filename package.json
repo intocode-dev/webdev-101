@@ -1,0 +1,23 @@
+{
+  "name": "webdev-101",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "minimal-web-boilerplate": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intocode-io/webdev-101.git"
+  },
+  "author": "Satana Charuwichitratana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/intocode-io/webdev-101/issues"
+  },
+  "homepage": "https://github.com/intocode-io/webdev-101#readme"
+}
