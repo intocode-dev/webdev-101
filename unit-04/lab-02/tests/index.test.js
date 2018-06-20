@@ -5,7 +5,7 @@ describe('index.html', () => {
     let browser, page;
 
     beforeAll(async () => {
-        browser = await puppeteer.launch({ headless: false });
+        browser = await puppeteer.launch({ headless: true });
         page = await browser.newPage();
         await page.goto('http://localhost:7777');
     });
@@ -41,7 +41,7 @@ describe('page-2.html', () => {
     let browser, page;
 
     beforeAll(async () => {
-        browser = await puppeteer.launch({ headless: false });
+        browser = await puppeteer.launch({ headless: true });
         page = await browser.newPage();
         await page.goto('http://localhost:7777/page-2.html');
     });

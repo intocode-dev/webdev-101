@@ -9,7 +9,7 @@
   "name": "webdev-101-unit-04-lab-02",
   "scripts": {
     "build": "parcel build src/index.html",
-    "dev": "parcel src/index.html -p 7777",
+    "dev": "parcel src/index.html -p 7776",
     "prebuild": "shx rm -rf dist/*",
     "predev": "shx rm -rf dist/*",
     "test": "jest --config jest.config.js"
