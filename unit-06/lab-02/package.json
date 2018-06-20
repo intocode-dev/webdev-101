@@ -1,0 +1,19 @@
+{
+  "dependencies": {},
+  "description": "WEBDEV-101 Unit 6 Lab 2",
+  "devDependencies": {
+    "jest": "^23.1.0",
+    "parcel-bundler": "^1.9.2",
+    "shx": "^0.3.0"
+  },
+  "license": "MIT",
+  "name": "webdev-101-unit-06-lab-02",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html -p 7777 --open",
+    "prebuild": "shx rm -rf dist/*",
+    "predev": "shx rm -rf dist/*",
+    "test": "jest --config jest.config.js"
+  },
+  "version": "1.2.2"
+}
