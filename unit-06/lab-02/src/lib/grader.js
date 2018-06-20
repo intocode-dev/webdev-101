@@ -1,4 +1,4 @@
-class ZeroToHundredError extends Error {
+class NotZeroToHundredError extends Error {
     constructor() {
         super('Parameter score must be between 0 to 100');
     }
@@ -15,7 +15,7 @@ function getGradeByScore(score) {
     }
 
     if (score < 0 || score > 100) {
-        throw new ZeroToHundredError();
+        throw new NotZeroToHundredError();
     } else if (score < 50) {
         return 'F';
     } else if (score < 60) {
@@ -29,4 +29,4 @@ function getGradeByScore(score) {
     }
 }
 
-module.exports = { getGradeByScore, ZeroToHundredError, NotNumberError };
+module.exports = { getGradeByScore, NotZeroToHundredError, NotNumberError };

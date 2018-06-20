@@ -1,4 +1,4 @@
-const { getGradeByScore, ZeroToHundredError, NotNumberError } = require('../../src/lib/grader');
+const { getGradeByScore, NotZeroToHundredError, NotNumberError } = require('../../src/lib/grader');
 
 describe('getGradeByScore', () => {
     it('should throw NotNumberError if score is string', () => {
@@ -12,11 +12,11 @@ describe('getGradeByScore', () => {
         expect(() => getGradeByScore(null)).toThrowError(NotNumberError);
         expect(() => getGradeByScore(undefined)).toThrowError(NotNumberError);
     });
-    it('should throw ZeroToHundredError if score less than 0', () => {
-        expect(() => getGradeByScore(-1)).toThrowError(ZeroToHundredError);
+    it('should throw NotZeroToHundredError if score less than 0', () => {
+        expect(() => getGradeByScore(-1)).toThrowError(NotZeroToHundredError);
     });
-    it('should throw ZeroToHundredError if score more than 100', () => {
-        expect(() => getGradeByScore(101)).toThrowError(ZeroToHundredError);
+    it('should throw NotZeroToHundredError if score more than 100', () => {
+        expect(() => getGradeByScore(101)).toThrowError(NotZeroToHundredError);
     });
     it('should return F if score is 0', () => {
         expect(getGradeByScore(0)).toEqual('F');
