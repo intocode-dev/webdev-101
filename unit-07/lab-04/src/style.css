@@ -1,0 +1,10 @@
+body {
+    color: #104b98;
+    background: #eee;
+    height: 5000px;
+}
+
+.parallax-window {
+    min-height: 400px;
+	background: transparent;
+}
