@@ -1,5 +1,5 @@
 {
-  "name": "webdev-101",
+  "name": "@intocode-io/webdev-101",
   "version": "1.0.2",
   "description": "WEBDEV-101 online class",
   "main": "index.js",
